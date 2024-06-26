@@ -1,0 +1,318 @@
+/*Global css*/
+
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    width: 1280px;
+    font-family: "input-mono", monospace;
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* Header */
+
+header, main {
+    width: 1280px;
+    margin: 0 auto;
+  }
+
+img {
+    width: 100%;
+}
+
+#logo{
+    width: 1280px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+}
+
+#logo h2{
+    visibility: hidden;
+}
+
+#logo img{
+    margin: 0 auto;
+    grid-column-start: 2;
+    width: 10rem;
+}
+
+/* Get started section */
+#getStarted{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 8fr 1fr 1fr;
+    margin: 0 auto;
+} 
+#getStarted h1{
+    margin: 0 auto;
+    grid-column: 2 / span 3;
+    grid-row: 1 / span 2;
+} 
+
+#getStarted img{
+    margin: 0 auto;
+    grid-column: 1 / span 5;
+    grid-row: 2 / span 1;
+    
+} 
+#getStarted p{
+    margin: 0 auto;
+    grid-column: 2 / span 3;
+    grid-row: 3 / span 1;
+    
+} 
+
+#getStarted button{
+    margin: 0 auto;
+    grid-column: 2 / span 3;
+    grid-row: 4 / span 1;
+    
+} 
+
+/* About section */
+
+#about {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .75fr 4fr;
+    align-items: center;
+    column-gap: 1rem;
+    margin: 0 auto;
+}
+
+#about img{
+    width: 25rem;
+    height: 17rem;
+}
+
+#about h2{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    margin: 0 auto;
+}
+
+#about section p {
+    text-align: center;
+}
+
+#instructors {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 2fr 2fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#members {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 2fr 2fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#schedule {
+    grid-row: 2 / span 1;
+    grid-column: 3 / span 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 2fr 2fr;
+    justify-items: center;
+    align-items: center;
+}
+
+/* Product Display section */
+#product {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .75fr 4fr;
+    align-items: center;
+    column-gap: 1rem;
+    margin: 0 auto;
+}
+
+#product img{
+    width: 25rem;
+    height: 17rem;
+}
+
+#product h2{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    margin: 0 auto;
+}
+
+#product section p {
+    text-align: center;
+}
+
+#smoothies {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 2fr 2fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#recovery {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 2fr 2fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#training {
+    grid-row: 2 / span 1;
+    grid-column: 3 / span 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 2fr 2fr;
+    justify-items: center;
+    align-items: center;
+}
+
+
+/* Contact Form section*/
+
+#contact{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 8fr;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#contact h2{
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    margin: 0 auto;
+}
+
+.contact-form {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.contact-form h3{
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    margin: 0 auto;
+}
+
+#successMessage{
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    text-align: center;
+}
+
+form{
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+	display: block;
+	width: 50rem;
+	padding: 1em;
+	margin: 0 auto;
+	color: #222;
+	font-size: 1.1em;
+}
+
+input, label, fieldset{
+	display: block;
+	width: 100%;
+}
+
+.required{
+  display: inline-block;
+  color: #DE0B63;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+label{
+	padding-left: 0.5em;
+	margin: 0.75em 0 0.25em 0;
+}
+
+input{
+	font-size: 1em;
+	padding: 0.25em 0.5em;
+	border: 1px solid #222;
+	height: 2em;
+}
+
+fieldset{
+	border: 1px solid #222;
+	padding: 0.5em 0 1em 0.5em;
+	margin: 0.75em 0 0.25em 0;
+	width: 98%;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr 3fr;
+}
+
+input[type=radio]{
+	padding: 5px;
+	width: 2.5rem;
+	height: 2.5rem;
+
+
+}
+
+input[type=submit]{
+	padding: 0.75em;
+	width: 35%;
+	height: auto;
+	margin-left: 67%;
+	color: #fff;
+	background-color: #222;
+	border: none;
+	font-family: serif;
+}
+
+textarea{
+	width: 100%;
+	height: 5em;
+	margin-bottom: 1em;
+}
+
+.form-group_contact-methods{
+    display: flex;
+    flex-direction: row;
+}
+
+.form-group_contact-methods label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group_contact-methods label input{
+    margin-right: 8px;
+}
+
+
+/* position: absolute;
+    left: 0;
+    right: 0%;
+    transform: translate(-50%, -50%); */

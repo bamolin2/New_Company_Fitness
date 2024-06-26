@@ -3,6 +3,111 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.typekit.net/wfp5naz.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="NewCompanyFitness.js" defer></script>
 	<title>New Company Fitness</title>
 </head>
+<body>
+    <header>
+    <section id="logo">
+        <h2>New Company Fitness</h2>
+        <img src="photos/new_comp_logo.png" alt="New Company Fitness logo orange, yellow, black, and grey.">
+    </section>
+    </header>
+    <main id="main-content">
+        <section id="getStarted">
+            <h1>New Company Fitness</h1>
+            <img src="photos/New_Company_Fitness_image_line.jpeg" alt="multiple images of the same athlete broken into a series of images">
+            <p>Get your journey started with us today!</p>
+            <button>Get Started</button>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <section id="instructors">
+                <h3>Our Instructors</h3>
+                <img src="photos/New_Comp_mobility 2.jpeg" alt="two men doing mobility exercises in the gym">
+                <p>Meet our highly educated and expert trainers </p>
+            </section>
+            <section id="members">
+                <h3>Members Success</h3>
+                <img src="photos/New_Comp_female_trainer_2 2.jpeg" alt="female trainer helping female client">
+                <p>We are focused on helping you achieve your goals and help you on your fitness journey</p>
+            </section>
+            <section id="schedule">
+                <h3>Scheduling Your Session</h3>
+                <img src="photos/new_comp_logo.png" alt="New Company Fitness logo that is black, yellow, orange.">
+                <p>Scheduled sessions tailored to fit your needs.</p>
+            </section>
+        </section>
+        <section id="product">
+            <h2>Product Display</h2>
+            <section id="smoothies">
+                <h4>Nutritional Smoothies</h4>
+                <img src="photos/new_comp_smoothie.jpeg" alt="">
+                <p>Strawberry Protien Smoothie 300 calories and 50 grams of protien.</p>
+            </section>
+            <section id="recovery">
+                <h4>Recovery Services</h4>
+                <img src="photos/new_comp_sauna.jpeg" alt="">
+                <p>Hold your recovery to the same standards as your training.</p>
+            </section>
+            <section id="training">
+                <h4>Personalized Instruction</h4>
+                <img src="photos/new_comp_one_on_one.jpeg" alt="">
+                <p>Scehdule your one on one session with our expert trainers.</p>
+            </section>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-form">
+                    <h3>Personalized sessions that fit your schedule!</h3>
+                        <form id="contactForm" onsubmit="return validateForm()">
+                            <div id="nameError" class="error-message" style="display: none;">Please enter something for your name.</div>
+                            <div class="form-group">
+                                <label for="name">Full Name:</label>
+                                <input type="text" id="name" name="name">
+                            </div>
+                            <div id="commentsError" class="error-message" style="display: none;">Please enter something for the comments.</div>
+                            <div class="form-group">
+                                <label for="comments">Comments:</label>
+                                <textarea id="comments" name="comments" rows="4"></textarea>
+                            </div>
+                            <div id="validEmailError" class="error-message" style="display: none;">Please enter a valid email address.</div>
+                            <div class="form-group">
+                                <label for="EmailField">Email:</label>
+                                <input type="text" id="EmailField" name="EmailField">
+                            </div>
+                            <div id="validPhoneError" class="error-message" style="display: none;">Please enter a valid phone number.</div>
+                            <div class="form-group">
+                                <label for="PhoneField">Phone:</label>
+                                <input type="text" id="PhoneField" name="PhoneField">
+                            </div>
+                            <div class="form-group_contact-methods">
+                                <label>
+                                    <input type="radio" name="contactMethod" value="email" checked=""> Contact me by Email
+                                </label>
+                                <label>
+                                    <input type="radio" name="contactMethod" value="phone"> Contact me by Phone
+                                </label>
+                            </div>
+            
+                            <button type="submit">Submit</button>
+                        </form>
+                    <div id="successMessage" class="success-message" style="display: none;"></div>
+            </div>
+        </section>
+        <section>
+            <div class="game-form">
+                    <h2>My guessing game</h2>
+                    <p>Guess a number between 1 and 10:</p>
+                    <input type="number" id="userGuess" min="1" max="10">
+                    <button id="guessButton">Submit Guess</button>
+                    <div id="resultMessage" class="game-result" style="display: none;"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
